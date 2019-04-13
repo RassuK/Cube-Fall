@@ -1,7 +1,5 @@
 # Cube-Fall
 
-Pilt
-:------------------------------------:
 <img src="https://i.imgur.com/Bi0skWP.png" height="450">
 
 Juhendina oli kasutuses https://www.youtube.com/watch?v=gc5a_Z6M4hs.
