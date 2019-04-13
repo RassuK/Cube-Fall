@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BG Scripts\BGScroll.cs" />
      <Compile Include="Assets\Scripts\Platform Scripts\PlatformScript.cs" />
+     <Compile Include="Assets\Scripts\Platform Scripts\PlatformSpawner.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/Cube Fall/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
