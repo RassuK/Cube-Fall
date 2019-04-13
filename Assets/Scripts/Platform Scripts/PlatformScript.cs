@@ -7,6 +7,9 @@ public class PlatformScript : MonoBehaviour {
     public float move_Speed = 2f;
     public float bound_Y = 6f;
 
+    public float move_Left = -1f;
+    public float move_Right = 1f;
+
     public bool moving_Platform_Left, moving_Platform_Right, is_Breakable, is_Spike, is_Platform;
 
     private Animator anim;
@@ -32,13 +35,13 @@ public class PlatformScript : MonoBehaviour {
         }
 
     } // move
-/*
+
     void BreakableDeactivate() {
         Invoke("DeactivateGameObject", 0.35f);
     }
 
     void DeactivateGameObject() {
-         SoundManager.instance.IceBreakSound();
+        SoundManager.instance.IceBreakSound();
         gameObject.SetActive(false);
     }
 
@@ -50,7 +53,7 @@ public class PlatformScript : MonoBehaviour {
 
                 target.transform.position = new Vector2(1000f, 1000f);
                 SoundManager.instance.GameOverSound();
-                 GameManager.instance.RestartGame();
+                GameManager.instance.RestartGame();
 
             }
 
@@ -81,15 +84,15 @@ public class PlatformScript : MonoBehaviour {
         if(target.gameObject.tag == "Player") { 
        
             if(moving_Platform_Left) {
-                target.gameObject.GetComponent<PlayerMovement>().PlatformMove(-1f);
+                target.gameObject.GetComponent<PlayerMovement>().PlatformMove(move_Left);
             }
 
             if (moving_Platform_Right) {
-                target.gameObject.GetComponent<PlayerMovement>().PlatformMove(1f);
+                target.gameObject.GetComponent<PlayerMovement>().PlatformMove(move_Right);
             }
 
         }
 
     } // on collision stay
-*/
+
 } // class
